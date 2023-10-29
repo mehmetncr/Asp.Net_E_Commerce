@@ -1,0 +1,200 @@
+﻿<header class="header header-10 header-intro-clearance">
+
+    <div class="header-middle">
+        <div class="container">
+            <div class="header-left">
+                <button class="mobile-menu-toggler">
+                    <span class="sr-only">Toggle mobile menu</span>
+                    <i class="icon-bars"></i>
+                </button>
+
+                <a asp-action="Index" asp-controller="Anasayfa" class="logo">
+                    <img src="~/images/oie_transparent.png" alt="Molla Logo" width="190" height="25">
+                </a>
+            </div><!-- End .header-left -->
+
+            <div class="header-center">
+                <div class="header-search header-search-extended header-search-visible header-search-no-radius d-none d-lg-block">
+                    <a href="#" class="search-toggle" role="button"><i class="icon-search"></i></a>
+                    <form asp-controller ="UrunlerListesi" asp-action="Index" method="get">
+                        <div class="header-search-wrapper search-wrapper-wide">
+                        @*     <div class="select-custom">
+                                <select id="cat" name="cat">
+                                    <option value="">All Departments</option>
+                                    <option value="1">Fashion</option>
+                                    <option value="2">- Women</option>
+                                    <option value="3">- Men</option>
+                                    <option value="4">- Jewellery</option>
+                                    <option value="5">- Kids Fashion</option>
+                                    <option value="6">Electronics</option>
+                                    <option value="7">- Smart TVs</option>
+                                    <option value="8">- Cameras</option>
+                                    <option value="9">- Games</option>
+                                    <option value="10">Home &amp; Garden</option>
+                                    <option value="11">Motors</option>
+                                    <option value="12">- Cars and Trucks</option>
+                                    <option value="15">- Boats</option>
+                                    <option value="16">- Auto Tools &amp; Supplies</option>
+                                </select>
+                            </div><!-- End .select-custom --> *@
+                            <label for="q" class="sr-only">Search</label>
+                            <input type="search" class="form-control" name="ara" id="q" placeholder="Ürün Ara ..." required>
+                            <button class="btn btn-primary" type="submit"><i class="icon-search"></i></button>
+                        </div><!-- End .header-search-wrapper -->
+                    </form>
+                </div><!-- End .header-search -->
+            </div>
+
+            <div class="header-right">
+                <div class="header-dropdown-link">
+                    @if (User.Identity!.IsAuthenticated)
+                    {
+                        <div class="dropdown compare-dropdown">
+                            <a asp-controller="Profil" asp-action="Index" class="dropdown-toggle" role="button" aria-haspopup="true" aria-expanded="false" data-display="static" title="Compare Products" aria-label="Compare Products">
+                                <i class="icon-user"></i>
+                                <span class="compare-txt">@User.Identity.Name</span>
+                            </a>
+                            <div class="dropdown-menu dropdown-menu-right">
+
+
+                                <div class="compare-actions">
+                                    <a asp-controller="Profil" asp-action="Index" class="btn btn-outline-primary-2"><span>Profilim</span><i class="icon-user"></i></a>
+                                    <a asp-controller="Login" asp-action="Cikis" class="btn btn-outline-primary-2"><span>Çıkış Yap</span><i class="icon-long-arrow-right"></i></a>
+                                </div>
+                            </div><!-- End .dropdown-menu -->
+
+                        </div>
+                      
+
+                        <!-- End .compare-dropdown -->
+
+                        <!-- End .compare-dropdown -->
+                    }else
+                    {
+                        <div class="dropdown compare-dropdown">
+                            <a asp-controller="Login" asp-action="Index" class="dropdown-toggle" role="button" aria-haspopup="true" aria-expanded="false" data-display="static" title="Compare Products" aria-label="Compare Products">
+                                <i class="icon-user"></i>
+                                <span class="compare-txt">Giriş yap</span>
+                            </a>
+
+                        </div>
+
+                        <!-- End .compare-dropdown -->
+                    }       
+             
+
+                   
+                    <div class="dropdown cart-dropdown">
+                        <a asp-controller="Sepet" asp-action="Index" class="dropdown-toggle" role="button" aria-haspopup="true" aria-expanded="false" data-display="static">
+                            <i class="icon-shopping-cart"></i>
+                            <span class="cart-count"><vc:sepet-sayi></vc:sepet-sayi></span>
+                            <span class="cart-txt">Sepet</span>
+                        </a>
+
+                    </div><!-- End .cart-dropdown -->
+                </div>
+            </div><!-- End .header-right -->
+        </div><!-- End .container -->
+    </div><!-- End .header-middle -->
+
+    <div class="header-bottom sticky-header">
+        <div class="container">
+            <div class="header-left">
+                <div class="dropdown category-dropdown show is-on" data-visible="true">
+                    <a href="#" class="dropdown-toggle" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true" data-display="static" title="Browse Categories">
+                        Kategoriler
+                    </a>
+
+                    <div class="dropdown-menu " @* Sadece anasayfa için burda show Yazacak *@>
+                        <nav class="side-nav">
+                            <ul class="menu-vertical sf-arrows">
+                                <li><a asp-controller="UrunlerListesi" asp-action="Index" asp-route-id="3">Bilgisayarlar</a></li>
+                                <li><a asp-controller ="UrunlerListesi" asp-action="Index" asp-route-id="4">Yazıcılar</a></li>
+                                <li><a asp-controller="UrunlerListesi" asp-action="Index" asp-route-id="5">Toner ve Kartuşlar</a></li>
+                                <li><a asp-controller="UrunlerListesi" asp-action="Index" asp-route-id="6">Kırtasiye</a></li>
+                                <li><a asp-controller="UrunlerListesi" asp-action="Index" asp-route-id="7">Ofis Malzemeleri</a></li>
+               
+                            </ul><!-- End .menu-vertical -->
+                        </nav><!-- End .side-nav -->
+                    </div><!-- End .dropdown-menu -->
+                </div><!-- End .category-dropdown -->
+            </div><!-- End .col-lg-3 -->
+            <div class="header-center">
+                <nav class="main-nav">
+                    <ul class="menu sf-arrows">
+                        <li class="megamenu-container active">
+                            <a asp-action="Index" asp-controller="Anasayfa" class="sf-with-ul">AnaSayfa</a>
+
+                        </li>
+                        <li class="megamenu-container ">
+                            <a asp-action="Index" asp-controller="Hizmetlerimiz" class="sf-with-ul">Hizmetlerimiz</a>
+
+                            <div class="megamenu demo">
+                                <div class="menu-col">
+
+                                    <div class="demo-list">
+                                        <div class="demo-item">
+                                            <a asp-action="GuvenlikSistemleriHizmetleri" asp-controller="Hizmetlerimiz">
+                                                <span class="demo-bg" style="background-image: url(/images/kamera.jpg);"></span>
+                                                <span class="demo-title">Güvenlik Sitemleri</span>
+                                            </a>
+                                        </div><!-- End .demo-item -->
+
+                                        <div class="demo-item">
+                                            <a asp-action="BilgisayarTeknikServisHizmetleri" asp-controller="HizmeHizmetlerimiztler">
+                                                <span class="demo-bg" style="background-image: url(/images/bilgisayar-teknik.jpg);"></span>
+                                                <span class="demo-title">Bilgisayar Bakımı</span>
+                                            </a>
+                                        </div><!-- End .demo-item -->
+                                        <div class="demo-item">
+                                            <a asp-action="FiberAltyapıHizmetleri" asp-controller="Hizmetlerimiz">
+                                                <span class="demo-bg" style="background-image: url(/images/fiber.jpg);"></span>
+                                                <span class="demo-title">Fiber ALtyapı</span>
+                                            </a>
+                                        </div><!-- End .demo-item -->
+
+                                        <div class="demo-item">
+                                            <a asp-action="NetworkDataKablolamaHizmetleri" asp-controller="Hizmetlerimiz">
+                                                <span class="demo-bg" style="background-image: url(/images/datakablo.jpg);"></span>
+                                                <span class="demo-title">Data Kablolama</span>
+                                            </a>
+                                        </div><!-- End .demo-item -->
+                                        <div class="demo-item">
+                                            <a asp-action="YaziciTeknikServisHizmetleri" asp-controller="Hizmetlerimiz">
+                                                <span class="demo-bg" style="background-image: url(/images/yaziciservis.jpg);"></span>
+                                                <span class="demo-title">Yazıcı Teknik Servisi</span>
+                                            </a>
+                                        </div><!-- End .demo-item -->
+                                        <div class="demo-item">
+                                            <a asp-action="KartusTonerServisHizmetleri" asp-controller="Hizmetlerimiz">
+                                                <span class="demo-bg" style="background-image: url(/images/tonerdolumu.jpg);"></span>
+                                                <span class="demo-title">Toner Kartuş Servisi</span>
+                                            </a>
+                                        </div><!-- End .demo-item -->
+
+
+
+
+                                    </div><!-- End .demo-list -->
+
+
+                                </div><!-- End .menu-col -->
+                            </div><!-- End .megamenu -->
+                        </li>
+
+                        <li>
+                            <a asp-action="Index" asp-controller="Hakkimizda" class="sf-with-ul">Hakkımızda</a>
+
+                        </li>
+                        <li>
+                            <a asp-action="Index" asp-controller="Iletisim" class="sf-with-ul">İletişim</a>
+
+                        </li>
+                    </ul><!-- End .menu -->
+                </nav><!-- End .main-nav -->
+            </div><!-- End .col-lg-9 -->
+           
+        </div><!-- End .container -->
+    </div><!-- End .header-bottom -->
+
+</header><!-- End .header -->

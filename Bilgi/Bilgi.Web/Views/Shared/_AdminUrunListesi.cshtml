@@ -1,0 +1,31 @@
+﻿@model IEnumerable<UrunViewModel>
+<table class="table table-striped" id="urunlerliste">
+    <thead>
+        <tr>
+
+            <th> Adı </th>
+            <th> Stok Sayısı </th>
+            <th> Fiyatı </th>
+            <th> Satış Durumu </th>
+        </tr>
+    </thead>
+    <tbody >
+        @foreach (var item in Model)
+        {
+            <tr>
+
+                <td> @item.Adi </td>
+                <td>
+                    @item.Stok
+                </td>
+                <td> @item.Fiyat.ToString("C") </td>
+                <td><label class="@(item.SatisDurum==true?"badge badge-success":"badge badge-danger")">@(item.SatisDurum == true ? "Satışta" : "Satışa Kapalı")</label></td>
+                <td>
+                    <a onclick="durumGuncelle('@item.Id')" class=" btn btn-outline-@(item.SatisDurum==false?"success":"danger")">@(item.SatisDurum == true ? "Kaldır" : "Ekle")</a>
+                    <a class=" btn btn-outline-primary" asp-action="UrunGuncelle" asp-controller="urun" asp-route-id="@item.Id">Özellikler</a>
+                </td>
+            </tr>
+
+        }
+    </tbody>
+</table>

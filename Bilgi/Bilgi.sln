@@ -1,0 +1,55 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.7.34024.191
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Domains", "Domains", "{94E65F53-39FA-4AC8-8B0E-9F53CEE2DD7C}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Infrastructures", "Infrastructures", "{30760506-F351-460A-9F28-D2962900711F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Presentation", "Presentation", "{BF122A5A-8989-4BBC-BC31-2FFB31637206}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bilgi.Entity.Layer", "Bilgi.Entity.Layer\Bilgi.Entity.Layer.csproj", "{3BB93CFE-72F9-4A04-96B7-02042B0F793D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bilgi.Data.Access.Layer", "Bilgi.Data.Access.Layer\Bilgi.Data.Access.Layer.csproj", "{3BBEA113-3B99-43BF-8874-5CEC60B67FB5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bilgi.Service.Layer", "Bilgi.Service.Layer\Bilgi.Service.Layer.csproj", "{3AC58693-804F-4810-84A4-79ED7FDF8340}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bilgi.Web", "Bilgi.Web\Bilgi.Web.csproj", "{405B2978-D6CB-4028-B909-E2D114CD941F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3BB93CFE-72F9-4A04-96B7-02042B0F793D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3BB93CFE-72F9-4A04-96B7-02042B0F793D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3BB93CFE-72F9-4A04-96B7-02042B0F793D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3BB93CFE-72F9-4A04-96B7-02042B0F793D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3BBEA113-3B99-43BF-8874-5CEC60B67FB5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3BBEA113-3B99-43BF-8874-5CEC60B67FB5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3BBEA113-3B99-43BF-8874-5CEC60B67FB5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3BBEA113-3B99-43BF-8874-5CEC60B67FB5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3AC58693-804F-4810-84A4-79ED7FDF8340}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3AC58693-804F-4810-84A4-79ED7FDF8340}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3AC58693-804F-4810-84A4-79ED7FDF8340}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3AC58693-804F-4810-84A4-79ED7FDF8340}.Release|Any CPU.Build.0 = Release|Any CPU
+		{405B2978-D6CB-4028-B909-E2D114CD941F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{405B2978-D6CB-4028-B909-E2D114CD941F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{405B2978-D6CB-4028-B909-E2D114CD941F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{405B2978-D6CB-4028-B909-E2D114CD941F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{3BB93CFE-72F9-4A04-96B7-02042B0F793D} = {94E65F53-39FA-4AC8-8B0E-9F53CEE2DD7C}
+		{3BBEA113-3B99-43BF-8874-5CEC60B67FB5} = {30760506-F351-460A-9F28-D2962900711F}
+		{3AC58693-804F-4810-84A4-79ED7FDF8340} = {30760506-F351-460A-9F28-D2962900711F}
+		{405B2978-D6CB-4028-B909-E2D114CD941F} = {BF122A5A-8989-4BBC-BC31-2FFB31637206}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {47F55790-4D94-4958-A38E-FAE644E3D7D0}
+	EndGlobalSection
+EndGlobal

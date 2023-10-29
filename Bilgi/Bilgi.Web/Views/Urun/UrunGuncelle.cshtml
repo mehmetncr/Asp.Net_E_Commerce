@@ -1,0 +1,126 @@
+﻿@model UrunViewModel
+@{
+    ViewData["Title"] = "UrunGuncelle";
+    Layout = "~/Views/Shared/AdminLayout/_AdminLayout.cshtml";
+}
+
+<div class="main-panel">
+    <div class="content-wrapper">
+
+        <div class="row">
+
+            <div class="col-12 grid-margin stretch-card">
+                <div class="card">
+                    <div class="card-body">
+                        <h4 class="card-title">Ürün Güncelle</h4>
+                        <a asp-action="OzellikEkle" asp-controller="UrunEkle" asp-route-id="@Model.Id" class="btn btn-outline-success mb-3">Özellikleri Güncelle</a>
+                      
+                        <form class="forms-sample" method="post" asp-action="UrunGuncelle" asp-controller="Urun" enctype="multipart/form-data">
+                          <input asp-for="SatisDurum" value="@Model.SatisDurum"  type="hidden"/>
+                          <input asp-for="ResimUrlKucuk" value="@Model.ResimUrlKucuk"  type="hidden"/>
+                          <input asp-for="ResimUrl1" value="@Model.ResimUrl1"  type="hidden"/>
+                          <input asp-for="ResimUrl2" value="@Model.ResimUrl2"  type="hidden"/>
+                            <input asp-for="ResimUrl3" value="@Model.ResimUrl3" type="hidden" />
+                            <div class="form-group">
+                                <label for="exampleInputName1">Adı</label>
+                                <input asp-for="Adi" type="text" class="form-control" id="exampleInputName1" placeholder="Adı">
+                            </div>
+                            <div class="form-group">
+                                <label for="exampleInputEmail3">Markası</label>
+                                <input asp-for="Marka" type="text" class="form-control" id="exampleInputEmail3" placeholder="Markası">
+                            </div>
+                            <div class="form-group">
+                                <label for="exampleSelectGender">Kategorisi</label>
+                                <select asp-for="KategoriId" class="form-control" id="exampleSelectGender">
+                                    <option value="1">Masaütü Bilgisayar</option>
+                                    <option value="3">Laptop</option>
+                                    <option value="4">Yazıcı</option>
+                                    <option value="5">Toner Ve Kartus</option>
+                                    <option value="6">Kırtasiye</option>
+                                    <option value="7">Ofis Malzeme</option>
+                                    <option value="8">OEMParca</option>
+                                    <option value="9">Monitör</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="exampleInputCity1">Fiyat</label>
+                                <input asp-for="Fiyat" type="number" class="form-control" id="exampleInputCity1" placeholder="Fiyat">
+                            </div>
+                            <div class="form-group">
+                                <label for="exampleInputPassword4">Stok Sayısı</label>
+                                <input asp-for="Stok" type="number" class="form-control" id="exampleInputPassword4" placeholder="Stok Sayısı">
+                            </div>
+
+                            <div class="row">
+                                <div class="form-group col-3">
+                                    <div class="mb-3">
+                                        <label name="formFileKucuk" class="form-label">Küçük Resim</label>
+                                        <input class="form-control" type="file" name="formFileKucuk">
+                                    </div>
+                                </div>
+                                <div class="form-group col-3">
+                                    <div class="mb-3">
+                                        <label name="formFileResim1" class="form-label">Resim 1</label>
+                                        <input class="form-control" type="file" name="formFileResim1">
+                                    </div>
+                                </div>
+                                <div class="form-group col-3">
+                                    <div class="mb-3">
+                                        <label name="formFileResim2" class="form-label">Resim 2</label>
+                                        <input class="form-control" type="file" name="formFileResim2">
+                                    </div>
+                                </div>
+                                <div class="form-group col-3">
+                                    <div class="mb-3">
+                                        <label name="formFileResim3" class="form-label">Resim 3</label>
+                                        <input class="form-control" type="file" name="formFileResim3">
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <div class="row">
+                                <div class="form-group col-3">
+                                    <div class="mb-3">
+                                        <img src="@Model.ResimUrlKucuk" style="width:150px!important" />
+                                    </div>
+                                </div>
+                                <div class="form-group col-3">
+                                    <div class="mb-3">
+                                        <img src="@Model.ResimUrl1" style="width:150px!important" />
+                                    </div>
+                                </div>
+                                <div class="form-group col-3">
+                                    <div class="mb-3">
+                                        <img src="@Model.ResimUrl2" style="width:150px!important" />
+                                    </div>
+                                </div>
+                                <div class="form-group col-3">
+                                    <div class="mb-3">
+                                        <img src="@Model.ResimUrl3" style="width:150px!important" />
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <div class="form-group">
+                                <label for="exampleInputPassword4">Resim Başlık</label>
+                                <input asp-for="ResimBaslik" type="text" class="form-control" id="exampleInputPassword4" placeholder="Resim Başlık">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="exampleTextarea1">Açıklama</label>
+                                <textarea asp-for="Aciklama" class="form-control" id="exampleTextarea1" rows="4"></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary mr-2">Kaydet</button>
+                            <button class="btn btn-dark" asp-action="admin" asp-controller="Biladmin">Vazgeç</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <!-- content-wrapper ends -->
+
+</div>

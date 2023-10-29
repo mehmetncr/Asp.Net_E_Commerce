@@ -1,0 +1,69 @@
+﻿@model   List<SepetDetayViewModel>
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/MainLayout/_MainLayout.cshtml";
+}
+
+<main class="main">
+    <div class="page-header text-center" style="background-image: url('/molla/assets/images/page-header-bg.jpg')">
+        <div class="container">
+            <h1 class="page-title">Sepetim</h1>
+        </div><!-- End .container -->
+    </div><!-- End .page-header -->
+
+@if (Model.Count()>0)
+    {
+       
+
+                            <partial name="_SepetPartialView" model="@Model" />
+                      
+                
+ 
+
+    
+    }
+    else
+    {
+        <div style="display: flex; justify-content: center; align-items: center; ">
+            <img src="~/images/sepet.png" style="width: 200px;" alt="Sepet Resmi" />
+            <h2>Sepette Hiç Ürün Yok..</h2>
+        </div>
+
+    }
+</main><!-- End .main -->
+    
+
+@section Scripts{
+    <script>
+        // var inputElements = document.querySelectorAll('[id^="adet-"]');
+        // inputElements.forEach(function (inputElement) {
+        //     var urunid = inputElement.id.split('-')[1];
+
+        //     inputElement.addEventListener('change', function () {
+        //         // Input değerini alın
+        //         var deger = parseInt(inputElement.value); // Eğer sayı tipinde bir değer bekleniyorsa parseInt kullanabilirsiniz
+
+        //         // AJAX isteğini hazırlayın
+        //         $.ajax({
+        //             url: '/Sepet/AdetGuncelle', // Controller ve Action adınızı buraya ekleyin
+        //             type: 'GET', // veya 'GET' isteği olarak ayarlayabilirsiniz
+        //             data: { id: urunid, adet: deger }, // Controller'a göndermek istediğiniz veriyi buraya ekleyin
+        //             success: function (response) {
+        //                 // Başarılı cevap geldiğinde burası çalışır
+        //                 console.log('Controller cevabı:', response);
+        //                 $("#Tablo").load("/Sepet/GuncelSepet");
+
+        //                 var tabloContainer = document.getElementById("Tablo");
+        //                 var tabloElement = tabloContainer.querySelector("table");
+        //                 tabloElement.classList.add("page-content");
+        //             },
+        //             error: function (error) {
+        //                 // Hata durumunda burası çalışır
+        //                 console.error('Hata:', error);
+        //             }
+        //         });
+        //     });
+        // });
+
+    </script>
+}

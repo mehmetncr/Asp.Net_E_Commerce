@@ -1,0 +1,245 @@
+﻿@model IEnumerable<UrunViewModel>
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/MainLayout/_MainLayout.cshtml";
+}
+
+<main class="main">
+    <nav aria-label="breadcrumb" class="breadcrumb-nav mb-3">
+        <div class="container">
+        </div><!-- End .container -->
+    </nav><!-- End .breadcrumb-nav -->
+
+    <div class="page-content">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-9 col-xl-4-5col">
+
+
+
+                    <div class="toolbox">
+                        <div class="toolbox-left">
+                            <div class="toolbox-info">
+                                @if (Model != null)
+                                {
+                                    @Model.Count() <span> Ürün Bulundu</span>
+
+
+
+                                }
+                            </div><!-- End .toolbox-info -->
+
+                            <div class="toolbox-info ml-5">
+
+                                @if (ViewBag.filtremarka != null)
+                                {
+                                    @:Marka-[
+                                    foreach (var item in ViewBag.filtremarka)
+                                    {
+                                        <span>  @item</span>
+                                    }
+                                    @: ]
+                                }
+                                @if (ViewBag.filtrefiyat != null && ViewBag.filtrefiyat != 0)
+                                {
+                                    <span class="ml-3">  @ViewBag.filtrefiyat TL Altında</span>
+                                }
+
+                                @if (ViewBag.filtremarka != null || ViewBag.filtrefiyat != null && Model.Count()!=0)
+                                {
+
+                                    @foreach (var item in Model)
+                                    {
+                                        <a asp-action="Index" asp-controller="UrunlerListesi" asp-route-id="@item.KategoriId" method="get" type="button" class="btn btn-primary">Filtreleri Temizle</a>
+                                        break;
+
+                                    }
+
+                                   
+                                }
+
+
+
+                            </div><!-- End .toolbox-info -->
+                        </div><!-- End .toolbox-left -->
+
+                        <div class="toolbox-right">
+                            <div class="toolbox-sort">
+                                <label for="sortby">Sort by:</label>
+                                <div class="select-custom">
+                                    <select name="sortby" id="sortby" class="form-control">
+                                        <option value="popularity" selected="selected">Most Popular</option>
+                                        <option value="rating">Most Rated</option>
+                                        <option value="date">Date</option>
+                                    </select>
+                                </div>
+                            </div><!-- End .toolbox-sort -->
+                        </div><!-- End .toolbox-right -->
+                    </div><!-- End .toolbox -->
+
+                    <div class="products mb-3">
+                        <div class="row" id="urunList">
+
+                            <partial name="_FiltreSonucPartialView" data="@Model" />
+                        </div><!-- End .row -->
+                    </div><!-- End .products -->
+
+                    <nav aria-label="Page navigation">
+                        <ul class="pagination">
+                            <li class="page-item disabled">
+                                <a class="page-link page-link-prev" href="#" aria-label="Previous" tabindex="-1" aria-disabled="true">
+                                    <span aria-hidden="true"><i class="icon-long-arrow-left"></i></span>Prev
+                                </a>
+                            </li>
+                            <li class="page-item active" aria-current="page"><a class="page-link" href="#">1</a></li>
+                            <li class="page-item"><a class="page-link" href="#">2</a></li>
+                            <li class="page-item-total">of 2</li>
+                            <li class="page-item">
+                                <a class="page-link page-link-next" href="#" aria-label="Next">
+                                    Next <span aria-hidden="true"><i class="icon-long-arrow-right"></i></span>
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div><!-- End .col-lg-9 -->
+
+                <aside class="col-lg-3 col-xl-5col order-lg-first">
+                    <div class="sidebar sidebar-shop">
+                        <div class="widget widget-categories">
+                            <h3 class="widget-title">Ürünlerimiz</h3><!-- End .widget-title -->
+
+                            <div class="widget-body">
+                                <div class="accordion" id="widget-cat-acc">
+                                    <div class="acc-item">
+                                        <h5>
+                                            <a role="button" data-toggle="collapse" href="#collapse-1" aria-expanded="true" aria-controls="collapse-1">
+                                                Bilgisayarlar
+                                            </a>
+                                        </h5>
+                                        <div id="collapse-1" class="collapse show" data-parent="#widget-cat-acc">
+                                            <div class="collapse-wrap">
+                                                <ul>
+                                                    <li><a asp-action="Index" asp-controller="UrunlerListesi" asp-route-id="1">Masaüstü Bilgisayarlar</a></li>
+                                                    <li><a asp-action="Index" asp-controller="UrunlerListesi" asp-route-id="3">Laptoplar</a></li>
+                                                    <li><a asp-action="Index" asp-controller="UrunlerListesi" asp-route-id="9">Monitörler</a></li>
+                                                    <li><a asp-action="Index" asp-controller="UrunlerListesi" asp-route-id="8">Bilgisayar Parçaları</a></li>
+
+                                                </ul>
+                                            </div><!-- End .collapse-wrap -->
+                                        </div><!-- End .collapse -->
+                                    </div><!-- End .acc-item -->
+
+                                    <div class="acc-item">
+                                        <h5>
+                                            <a role="button" asp-action="Index" asp-controller="UrunlerListesi" asp-route-id="4">
+                                                Yazıcılar
+                                            </a>
+                                        </h5>
+
+                                    </div><!-- End .acc-item -->
+
+                                    <div class="acc-item">
+                                        <h5>
+                                            <a role="button" asp-action="Index" asp-controller="UrunlerListesi" asp-route-id="5">
+                                                Toner ve Kartuşlar
+                                            </a>
+                                        </h5>
+
+                                    </div><!-- End .acc-item -->
+
+                                    <div class="acc-item">
+                                        <h5>
+                                            <a role="button" asp-action="Index" asp-controller="UrunlerListesi" asp-route-id="6">
+                                                Kırtasiye Ürünleri
+                                            </a>
+                                        </h5>
+
+                                    </div><!-- End .acc-item -->
+                                    <div class="acc-item">
+                                        <h5>
+                                            <a role="button" asp-action="Index" asp-controller="UrunlerListesi" asp-route-id="7">
+                                                Ofis Malzemeleri
+                                            </a>
+                                        </h5>
+
+                                    </div><!-- End .acc-item -->
+                                </div><!-- End .accordion -->
+                            </div><!-- End .widget-body -->
+                        </div><!-- End .widget -->
+                        <form asp-action="Index" asp-controller="UrunlerListesi" method="get">
+                            <div class="widget">
+                                <h3 class="widget-title">Markalar</h3><!-- End .widget-title -->
+
+                                <div class="widget-body">
+                                    <div class="filter-items">
+
+                                        @foreach (var item in ViewBag.Markalar)
+                                        {
+                                            <div class="filter-item">
+                                                <div class="custom-control custom-checkbox">
+                                                    <input type="checkbox" class="custom-control-input" name="marka" value="@item" id="@item" @* onclick="filtre('@item,@Model')" *@>
+                                                    <label class="custom-control-label" for="@item">@item</label>
+                                                </div><!-- End .custom-checkbox -->
+                                            </div>
+
+                                            <!-- End .filter-item -->
+                                        }
+
+                                    </div><!-- End .filter-items -->
+                                </div><!-- End .widget-body -->
+
+                            </div><!-- End .widget -->
+
+                            <div class="widget">
+                                <h3 class="widget-title">Fiyat</h3><!-- End .widget-title -->
+
+                                <div class="widget-body">
+                                    <div class="filter-items">
+                                        <div class="filter-item">
+                                            <div class="custom-control custom-radio">
+                                                <input type="radio" class="custom-control-input" id="price-1" name="fiyat" value="5000">
+                                                <label class="custom-control-label" for="price-1">Max 5000 TL</label>
+                                            </div><!-- End .custom-checkbox -->
+                                        </div><!-- End .filter-item -->
+
+                                        <div class="filter-item">
+                                            <div class="custom-control custom-radio">
+                                                <input type="radio" class="custom-control-input" id="price-2" name="fiyat" value="10000">
+                                                <label class="custom-control-label" for="price-2">Max 10000 TL</label>
+                                            </div><!-- End .custom-checkbox -->
+                                        </div><!-- End .filter-item -->
+
+                                        <div class="filter-item">
+                                            <div class="custom-control custom-radio">
+                                                <input type="radio" class="custom-control-input" id="price-3" name="fiyat" value="15000">
+                                                <label class="custom-control-label" for="price-3">Max 15000 TL</label>
+                                            </div><!-- End .custom-checkbox -->
+                                        </div><!-- End .filter-item -->
+
+                                        <div class="filter-item">
+                                            <div class="custom-control custom-radio">
+                                                <input type="radio" class="custom-control-input" id="price-4" name="fiyat" value="5000">
+                                                <label class="custom-control-label" for="price-4">$100 to $200</label>
+                                            </div><!-- End .custom-checkbox -->
+                                        </div><!-- End .filter-item -->
+
+                                        <div class="filter-item">
+                                            <div class="custom-control custom-radio">
+                                                <input type="radio" class="custom-control-input" id="price-5" name="fiyat" value="5000">
+                                                <label class="custom-control-label" for="price-5">$200 & Above</label>
+                                            </div><!-- End .custom-checkbox -->
+                                        </div><!-- End .filter-item -->
+                                    </div><!-- End .filter-items -->
+                                </div><!-- End .widget-body -->
+                            </div><!-- End .widget -->
+
+                            <input type="submit" class="btn btn-primary" value="Uygula" />
+                        </form>
+
+                    </div><!-- End .sidebar sidebar-shop -->
+                </aside><!-- End .col-lg-3 -->
+            </div><!-- End .row -->
+        </div><!-- End .container -->
+    </div><!-- End .page-content -->
+
+</main><!-- End .main -->

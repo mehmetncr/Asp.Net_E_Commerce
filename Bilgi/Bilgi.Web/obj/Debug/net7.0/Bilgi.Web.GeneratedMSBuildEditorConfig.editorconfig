@@ -1,0 +1,185 @@
+is_global = true
+build_property.TargetFramework = net7.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = Bilgi.Web
+build_property.RootNamespace = Bilgi.Web
+build_property.ProjectDir = C:\Users\MEHMET\Desktop\BilgiKeyvalue\Bilgi\Bilgi.Web\
+build_property.RazorLangVersion = 7.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = C:\Users\MEHMET\Desktop\BilgiKeyvalue\Bilgi\Bilgi.Web
+build_property._RazorSourceGeneratorDebug = 
+
+[C:/Users/MEHMET/Desktop/BilgiKeyvalue/Bilgi/Bilgi.Web/Views/Anasayfa/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQW5hc2F5ZmFcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/MEHMET/Desktop/BilgiKeyvalue/Bilgi/Bilgi.Web/Views/Biladmin/admin.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQmlsYWRtaW5cYWRtaW4uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/MEHMET/Desktop/BilgiKeyvalue/Bilgi/Bilgi.Web/Views/Hakkimizda/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSGFra2ltaXpkYVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/MEHMET/Desktop/BilgiKeyvalue/Bilgi/Bilgi.Web/Views/Hizmetlerimiz/BilgisayarTeknikServisHizmetleri.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSGl6bWV0bGVyaW1pelxCaWxnaXNheWFyVGVrbmlrU2VydmlzSGl6bWV0bGVyaS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/MEHMET/Desktop/BilgiKeyvalue/Bilgi/Bilgi.Web/Views/Hizmetlerimiz/FiberAltyapıHizmetleri.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSGl6bWV0bGVyaW1pelxGaWJlckFsdHlhcMSxSGl6bWV0bGVyaS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/MEHMET/Desktop/BilgiKeyvalue/Bilgi/Bilgi.Web/Views/Hizmetlerimiz/GuvenlikSistemleriHizmetleri.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSGl6bWV0bGVyaW1pelxHdXZlbmxpa1Npc3RlbWxlcmlIaXptZXRsZXJpLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/MEHMET/Desktop/BilgiKeyvalue/Bilgi/Bilgi.Web/Views/Hizmetlerimiz/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSGl6bWV0bGVyaW1pelxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/MEHMET/Desktop/BilgiKeyvalue/Bilgi/Bilgi.Web/Views/Hizmetlerimiz/KartusTonerServisHizmetleri.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSGl6bWV0bGVyaW1pelxLYXJ0dXNUb25lclNlcnZpc0hpem1ldGxlcmkuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/MEHMET/Desktop/BilgiKeyvalue/Bilgi/Bilgi.Web/Views/Hizmetlerimiz/NetworkDataKablolamaHizmetleri.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSGl6bWV0bGVyaW1pelxOZXR3b3JrRGF0YUthYmxvbGFtYUhpem1ldGxlcmkuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/MEHMET/Desktop/BilgiKeyvalue/Bilgi/Bilgi.Web/Views/Hizmetlerimiz/YaziciTeknikServisHizmetleri.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSGl6bWV0bGVyaW1pelxZYXppY2lUZWtuaWtTZXJ2aXNIaXptZXRsZXJpLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/MEHMET/Desktop/BilgiKeyvalue/Bilgi/Bilgi.Web/Views/Iletisim/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSWxldGlzaW1cSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/MEHMET/Desktop/BilgiKeyvalue/Bilgi/Bilgi.Web/Views/Login/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTG9naW5cSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/MEHMET/Desktop/BilgiKeyvalue/Bilgi/Bilgi.Web/Views/Profil/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZmlsXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/MEHMET/Desktop/BilgiKeyvalue/Bilgi/Bilgi.Web/Views/Register/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVnaXN0ZXJcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/MEHMET/Desktop/BilgiKeyvalue/Bilgi/Bilgi.Web/Views/Sepet/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2VwZXRcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/MEHMET/Desktop/BilgiKeyvalue/Bilgi/Bilgi.Web/Views/Shared/AdminLayout/_AdminLayout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEFkbWluTGF5b3V0XF9BZG1pbkxheW91dC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/MEHMET/Desktop/BilgiKeyvalue/Bilgi/Bilgi.Web/Views/Shared/Components/DetayAside/Default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcRGV0YXlBc2lkZVxEZWZhdWx0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/MEHMET/Desktop/BilgiKeyvalue/Bilgi/Bilgi.Web/Views/Shared/Components/DetayGenelUrunler/Default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcRGV0YXlHZW5lbFVydW5sZXJcRGVmYXVsdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/MEHMET/Desktop/BilgiKeyvalue/Bilgi/Bilgi.Web/Views/Shared/Components/HeaderKullanici/Default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcSGVhZGVyS3VsbGFuaWNpXERlZmF1bHQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/MEHMET/Desktop/BilgiKeyvalue/Bilgi/Bilgi.Web/Views/Shared/Components/MainBilgisayarlar/Default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcTWFpbkJpbGdpc2F5YXJsYXJcRGVmYXVsdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/MEHMET/Desktop/BilgiKeyvalue/Bilgi/Bilgi.Web/Views/Shared/Components/MainKirtasiye/Default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcTWFpbktpcnRhc2l5ZVxEZWZhdWx0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/MEHMET/Desktop/BilgiKeyvalue/Bilgi/Bilgi.Web/Views/Shared/Components/MainOfisMalzemeleri/Default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcTWFpbk9maXNNYWx6ZW1lbGVyaVxEZWZhdWx0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/MEHMET/Desktop/BilgiKeyvalue/Bilgi/Bilgi.Web/Views/Shared/Components/MainYazıcılar/Default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcTWFpbllhesSxY8SxbGFyXERlZmF1bHQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/MEHMET/Desktop/BilgiKeyvalue/Bilgi/Bilgi.Web/Views/Shared/Components/SepetSayi/Default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcU2VwZXRTYXlpXERlZmF1bHQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/MEHMET/Desktop/BilgiKeyvalue/Bilgi/Bilgi.Web/Views/Shared/Components/UrunListesi/Default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcVXJ1bkxpc3Rlc2lcRGVmYXVsdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/MEHMET/Desktop/BilgiKeyvalue/Bilgi/Bilgi.Web/Views/Shared/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/MEHMET/Desktop/BilgiKeyvalue/Bilgi/Bilgi.Web/Views/Shared/MainLayout/_MainLayout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXE1haW5MYXlvdXRcX01haW5MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/MEHMET/Desktop/BilgiKeyvalue/Bilgi/Bilgi.Web/Views/Shared/_AdminUrunListesi.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9BZG1pblVydW5MaXN0ZXNpLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/MEHMET/Desktop/BilgiKeyvalue/Bilgi/Bilgi.Web/Views/Shared/_FiltreSonucPartialView.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9GaWx0cmVTb251Y1BhcnRpYWxWaWV3LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/MEHMET/Desktop/BilgiKeyvalue/Bilgi/Bilgi.Web/Views/Shared/_FooterPartialView.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9Gb290ZXJQYXJ0aWFsVmlldy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/MEHMET/Desktop/BilgiKeyvalue/Bilgi/Bilgi.Web/Views/Shared/_HeaderPatrialView.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9IZWFkZXJQYXRyaWFsVmlldy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/MEHMET/Desktop/BilgiKeyvalue/Bilgi/Bilgi.Web/Views/Shared/_SepetPartialView.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9TZXBldFBhcnRpYWxWaWV3LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/MEHMET/Desktop/BilgiKeyvalue/Bilgi/Bilgi.Web/Views/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/MEHMET/Desktop/BilgiKeyvalue/Bilgi/Bilgi.Web/Views/UrunDetay/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXJ1bkRldGF5XEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/MEHMET/Desktop/BilgiKeyvalue/Bilgi/Bilgi.Web/Views/UrunEkle/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXJ1bkVrbGVcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/MEHMET/Desktop/BilgiKeyvalue/Bilgi/Bilgi.Web/Views/UrunEkle/OzellikEkle.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXJ1bkVrbGVcT3plbGxpa0VrbGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/MEHMET/Desktop/BilgiKeyvalue/Bilgi/Bilgi.Web/Views/UrunEkle/OzellikGuncelle.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXJ1bkVrbGVcT3plbGxpa0d1bmNlbGxlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/MEHMET/Desktop/BilgiKeyvalue/Bilgi/Bilgi.Web/Views/UrunlerListesi/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXJ1bmxlckxpc3Rlc2lcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/MEHMET/Desktop/BilgiKeyvalue/Bilgi/Bilgi.Web/Views/Urun/UrunGuncelle.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXJ1blxVcnVuR3VuY2VsbGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/MEHMET/Desktop/BilgiKeyvalue/Bilgi/Bilgi.Web/Views/Urun/Urunler.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXJ1blxVcnVubGVyLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/MEHMET/Desktop/BilgiKeyvalue/Bilgi/Bilgi.Web/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/MEHMET/Desktop/BilgiKeyvalue/Bilgi/Bilgi.Web/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
